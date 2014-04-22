@@ -9,7 +9,7 @@
 /public/templates/cache/**
 
 # Logs
-/cronjobs/**
+#/cronjobs/**
 /cronjobs/logs/**.txt
 /cronjobs/logs/**.txt.*.gz
 /logs/*
