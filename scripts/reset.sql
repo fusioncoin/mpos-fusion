@@ -1,0 +1,15 @@
+use pooldb;
+truncate blocks;
+truncate blocks_mm;
+truncate payouts;
+truncate payouts_mm;
+truncate shares;
+truncate shares_archive;
+truncate shares_mm;
+truncate shares_archive_mm;
+truncate statistics_shares;
+truncate transactions;
+truncate transactions_mm;
+truncate monitoring;
+update settings set value=0 where name = 'last_accounted_block_id';
+update settings set value=0 where name = 'last_accounted_block_id_mm';
